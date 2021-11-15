@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{27916B1A-C484-4B31-AC15-43E744C39C06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Stok_ve_Satış_Takip_Sistemi</RootNamespace>
+    <AssemblyName>Stok ve Satış Takip Sistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.2" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Win.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v19.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export" />
+    <Reference Include="DevExpress.Printing.v19.2.Core" />
+    <Reference Include="DevExpress.Utils.v19.2" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.2" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.PointOfService, Version=1.14.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Point Of Service\SDK\Microsoft.PointOfService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFaturaYazdir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFaturaYazdir.Designer.cs">
+      <DependentUpon>frmFaturaYazdir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGelenTalep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGelenTalep.Designer.cs">
+      <DependentUpon>frmGelenTalep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKullanici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKullanici.Designer.cs">
+      <DependentUpon>frmKullanici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOzelUrun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOzelUrun.Designer.cs">
+      <DependentUpon>frmOzelUrun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSatis.Designer.cs">
+      <DependentUpon>frmSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSatisRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSatisRapor.Designer.cs">
+      <DependentUpon>frmSatisRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSatisRaporYazdir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSatisRaporYazdir.Designer.cs">
+      <DependentUpon>frmSatisRaporYazdir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStoklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStoklar.Designer.cs">
+      <DependentUpon>frmStoklar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStokRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStokRapor.Designer.cs">
+      <DependentUpon>frmStokRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStokRaporYazdir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStokRaporYazdir.Designer.cs">
+      <DependentUpon>frmStokRaporYazdir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTalepBilgiRaporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTalepBilgiRaporu.Designer.cs">
+      <DependentUpon>frmTalepBilgiRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTalepler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTalepler.Designer.cs">
+      <DependentUpon>frmTalepler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTaleplerim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTaleplerim.Designer.cs">
+      <DependentUpon>frmTaleplerim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTalepRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTalepRapor.Designer.cs">
+      <DependentUpon>frmTalepRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTalepRaporYazdir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTalepRaporYazdir.Designer.cs">
+      <DependentUpon>frmTalepRaporYazdir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrunler.Designer.cs">
+      <DependentUpon>frmUrunler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiris.Designer.cs">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrunlerRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrunlerRapor.Designer.cs">
+      <DependentUpon>frmUrunlerRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrunRaporYazdir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrunRaporYazdir.Designer.cs">
+      <DependentUpon>frmUrunRaporYazdir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KR_PrintInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KR_PrintInvoice.Designer.cs">
+      <DependentUpon>KR_PrintInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFaturaYazdir.resx">
+      <DependentUpon>frmFaturaYazdir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGelenTalep.resx">
+      <DependentUpon>frmGelenTalep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKullanici.resx">
+      <DependentUpon>frmKullanici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOzelUrun.resx">
+      <DependentUpon>frmOzelUrun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSatis.resx">
+      <DependentUpon>frmSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSatisRapor.resx">
+      <DependentUpon>frmSatisRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSatisRaporYazdir.resx">
+      <DependentUpon>frmSatisRaporYazdir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStoklar.resx">
+      <DependentUpon>frmStoklar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStokRapor.resx">
+      <DependentUpon>frmStokRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStokRaporYazdir.resx">
+      <DependentUpon>frmStokRaporYazdir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTalepBilgiRaporu.resx">
+      <DependentUpon>frmTalepBilgiRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTalepler.resx">
+      <DependentUpon>frmTalepler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTaleplerim.resx">
+      <DependentUpon>frmTaleplerim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTalepRapor.resx">
+      <DependentUpon>frmTalepRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTalepRaporYazdir.resx">
+      <DependentUpon>frmTalepRaporYazdir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrunler.resx">
+      <DependentUpon>frmUrunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiris.resx">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrunlerRapor.resx">
+      <DependentUpon>frmUrunlerRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrunRaporYazdir.resx">
+      <DependentUpon>frmUrunRaporYazdir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KR_PrintInvoice.resx">
+      <DependentUpon>KR_PrintInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SatisFis.rdlc" />
+    <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
